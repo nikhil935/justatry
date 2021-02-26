@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Object Practice</h1>
+    <script>
+        // var person={
+        //     age:50,
+        //     firstname:"nikhil",
+        //     lastname:"gurjar",
+        
+        // };
+        // person.name= function(){
+        //     return this.firstname +""+ this.lastname;
+        // };
+        
+        // // document.write(person.name());
+        // var person=newobject();
+        // person.agex=80;
+        // document.write(person.agex);
+
+
+
+        // var person={
+        //     name:"ng"
+        // };
+        // var x=person;
+        // x.name="gn";
+        // document.write(person.name);
+
+  //----------------JAVASCRIPT FOR IN LOOP --------------------------------
+
+    //     var txt="";
+
+    //     var person={
+    //         age:60,
+    //         name:"nick",
+    //         surname:"gurjar"
+    //     };
+    //     var x;
+    //     for(x in person){
+    //         txt+=person[x] + " ";
+    //     };
+        
+    // document.write(txt);
+
+    //
+    // var bottle = {
+    //     color:'greeen',
+    //     color2:"yellow",
+    //     color3:"black"
+    // };
+    // var mystring = JSON.stringify(bottle);
+    // document.write(mystring);
+
+    // var person={
+    //     name:"nick",
+    //     last:"gurjar",
+    //     myfunction:function(){
+    //         return this.name + " " +this.last;
+    //     }
+    // }
+    // var person2={
+    //     name:"ayush",
+    //     last:"sharma"
+
+    // }
+    // document.write(person.myfunction.call(person2));
+// class car{
+//     constructor(name,year){
+//         this.name=name;
+//         this.year=year;
+//     }
+  
+// }
+// let mycar= new car("ford",2019,56);
+// document.write(mycar.name+ " " + mycar.year );
+
+// function abc(){
+//     var name= "nick";
+//     document.write(name);
+// }
+// abc();
+// document.write
+
+function person(name,age,hobby){
+ this.name=name;
+ this.age=age;
+ this.hobby=hobby;
+}
+var myfather= new person ("ganesh",50,"cricket");
+
+var mymother=new person ("rekha",60,"football");
+
+myfather.name =function()
+{
+    return this.name + " "+ this.age;
+}
+document.write(myfather.name); 
+
+
+    </script>
+</body>
+</html>
